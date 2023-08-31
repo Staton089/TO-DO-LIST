@@ -15,6 +15,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: 'Raleway', sans-serif;
 }
 
 /* Apply a flex layout to the body for centering content */
@@ -41,6 +42,13 @@ header {
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
+h1, h2{
+  border-bottom: solid var(--color-button);
+  margin-top: 10px;
+}
+h3{
+  border-bottom: solid var(--color-button);
+}
 
 /* Your existing CSS code */
 
@@ -49,39 +57,31 @@ button {
   height: 40px;
   width: 20%;
   background-color: var(--color-button);
+  border: 2px solid var(--color-button);
   color: black;
   border: none;
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.2s;
   margin-top: 20px;
+  transition: background-color 0.2s, color 0.2s, border-color 0.2s;
+  padding: 8px 16px;
+  text-align: center;
+  font-size: 16px;
 }
 
 button:hover {
-  background-color: var(--color-button-hover);
-}
-
-/* Additional styling to make it look like a Bootstrap button */
-button.bootstrap-button {
-  font-size: 16px;
-  font-weight: bold;
-  text-align: center;
-  padding: 8px 16px;
-  border: 2px solid var(--color-button);
-  transition: background-color 0.2s, color 0.2s, border-color 0.2s;
-}
-
-button.bootstrap-button:hover {
   background-color: var(--color-button-hover);
   color: black;
   border-color: var(--color-button-hover);
 }
 
+
 /* Style for the input field container */
 .inputCss {
   display: flex;
   align-items: center;
-  margin-top: 10px;
+  margin-top: 20px;
 }
 
 /* Style for the input field */
