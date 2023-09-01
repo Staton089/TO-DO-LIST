@@ -39,7 +39,7 @@ header {
 
 /* Style for the ADD button */
 button {
-  background-color: #f4d160;
+  background-color: var(--color-button-hover);
   color: black;
   border: none;  /* Remove the default border */
   border-radius: 5px;
@@ -52,7 +52,7 @@ button {
 }
 
 button:hover {
-  background-color: #fbeeac;
+  background-color: var(--color-button);
 }
 
 /* Style for the input field container */
@@ -86,8 +86,8 @@ ul {
 
 /* Style for task list items */
 ul li {
-  background-color: #337ccf;
-  color: white;
+  background-color: var(--color-button-hover);
+  color: black;
   padding: 10px;
   border-radius: 5px;
   margin-bottom: 5px;
