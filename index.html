@@ -7,7 +7,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   
     <!-- The document's title -->
     <title>TO-DO-LIST</title>
@@ -18,16 +17,22 @@
       <!-- Header section with the application title and input field -->
       <h1>TO-DO-LIST</h1>
       <h2>Write Your Task Below:</h2>
-      <div class="inputCss">
+      <div class="">
         <h3>Task:</h3>
         <input id="input_El" type="text" />
       </div>
-      <button id="add_Btn_El" class="button">ADD</button>
-      <ul id="ul_El">
+      <button id="add_Btn_El" class="button">Add</button>
+      <button id="delete_El">Delete</button>
+    </header>
+    <main>
+      <div id="taskContainer">
+        
         <!-- Unordered list for displaying tasks (will be populated using JavaScript) -->
         <!-- <li> elements will be appended here through JavaScript -->
-      </ul>
-    </header>
+        </div>
+    </main>
+      
+    
     <script src="./javascript/script.js"></script>
   </body>
 </html>
